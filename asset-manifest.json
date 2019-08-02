@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tenantbase/static/css/main.c9ba7fa1.chunk.css",
+    "main.js": "/tenantbase/static/js/main.490311ee.chunk.js",
+    "main.js.map": "/tenantbase/static/js/main.490311ee.chunk.js.map",
+    "runtime~main.js": "/tenantbase/static/js/runtime~main.326b0316.js",
+    "runtime~main.js.map": "/tenantbase/static/js/runtime~main.326b0316.js.map",
+    "static/js/2.65aa1cca.chunk.js": "/tenantbase/static/js/2.65aa1cca.chunk.js",
+    "static/js/2.65aa1cca.chunk.js.map": "/tenantbase/static/js/2.65aa1cca.chunk.js.map",
+    "index.html": "/tenantbase/index.html",
+    "precache-manifest.ec982219122eb1e8748a48bdfe82da58.js": "/tenantbase/precache-manifest.ec982219122eb1e8748a48bdfe82da58.js",
+    "service-worker.js": "/tenantbase/service-worker.js",
+    "static/css/main.c9ba7fa1.chunk.css.map": "/tenantbase/static/css/main.c9ba7fa1.chunk.css.map"
+  }
+}
