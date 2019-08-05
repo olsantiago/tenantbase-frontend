@@ -8,11 +8,13 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      items:[]
+      items:[],
+      curTime:new Date().toLocaleString()
     }
   }
   componentDidMount() {
-    this.getItems()
+    this.getItems();
+
   }
 
 
@@ -21,6 +23,13 @@ class App extends Component {
     fetch('/api/palettes/new?format=json')
       .then(results => results.json())
       .then(results => this.setState({items: results }));
+
+      setInterval( () => {
+        this.setState({
+          curTime : new Date().toLocaleString()
+        });
+        window.location.reload(true);
+      },60000)
   }
 
   //simple date format of string data
@@ -39,7 +48,14 @@ class App extends Component {
 
 
 
+  
+
+  
+
+
+
   render(){
+    
     const items = this.state.items;
     return (
       <section className="palette">
@@ -49,7 +65,7 @@ class App extends Component {
               <h1>ColourLovers. <span>Live.</span></h1>
             </div>
             <div className="col-3">
-              <span>last Updated at 3:25 PM</span>
+              <span>last Updated at {this.state.curTime}</span>
             </div>
           </div>
           <div className="row main-body">
